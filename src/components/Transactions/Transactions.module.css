@@ -1,0 +1,11 @@
+.transaction {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border: lightgray solid;
+}
+
+.head {
+    background-color: lightskyblue;
+}
