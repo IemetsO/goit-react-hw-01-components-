@@ -7,11 +7,11 @@ function StatisticList({ title, items }) {
     <section className={s.statistics}>
       {title && <h2 className={s.title}>{title}</h2>}
       <ul className={s.list}>
-        {items.map(item => (
+        {items.map(({id, label, percentage}) => (         
           <Statistics
-            key={item.id}
-            label={item.label}
-            percentage={item.percentage}
+            key={id}
+            label={label}
+            percentage={percentage}
           />
         ))}
       </ul>

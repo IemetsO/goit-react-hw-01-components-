@@ -1,10 +1,10 @@
 import Profile from './Profile/Profile';
-import user from '.././user.json';
+import user from "./data/user.json";
 import StatisticList from './Statistic/StatisticList';
-import items from '.././data.json';
-import friends from '.././friends.json';
+import items from './data/data.json';
+import friends from './data/friends.json';
 import FriendList from './Friends/FriendList';
-import transactions from '.././transactions.json';
+import transactions from './data/transactions.json';
 import TransactionHistory from './Transactions/TransactionHistory';
 import "modern-normalize/modern-normalize.css"
 
@@ -16,9 +16,7 @@ export default function App() {
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
+        stats={user.stats}
       />
       <StatisticList title="UPLOAD STATS" items={items} />
       <FriendList friends={friends} />

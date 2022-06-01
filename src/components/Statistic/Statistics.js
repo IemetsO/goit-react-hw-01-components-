@@ -11,6 +11,6 @@ export default function Statistics({ label, percentage }) {
 }
 
 Statistics.propTypes = {
-  label: PropTypes.string,
-  percentage: PropTypes.number,
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
 };
