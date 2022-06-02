@@ -1,10 +1,10 @@
 import Profile from './Profile/Profile';
-import user from "./data/user.json";
+import user from "./../data/user.json";
 import StatisticList from './Statistic/StatisticList';
-import items from './data/data.json';
-import friends from './data/friends.json';
+import items from './../data/data.json';
+import friends from './../data/friends.json';
 import FriendList from './Friends/FriendList';
-import transactions from './data/transactions.json';
+import transactions from './../data/transactions.json';
 import TransactionHistory from './Transactions/TransactionHistory';
 import "modern-normalize/modern-normalize.css"
 
